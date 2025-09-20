@@ -4,7 +4,7 @@ local gameId = game.GameId
 -- 判断是否为目标游戏
 if gameId == 6174994284 then
     -- 需要加载的链接
-    local url = "https://example.com/your_script.lua"
+    local url = "https://raw.githubusercontent.com/juruo-script/test/refs/heads/main/lol"
 
     -- 使用 loadstring 加载远程脚本
     local success, err = pcall(function()
