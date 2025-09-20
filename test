@@ -1,0 +1,21 @@
+-- 获取当前游戏 ID
+local gameId = game.GameId
+
+-- 判断是否为目标游戏
+if gameId == 6174994284 then
+    -- 需要加载的链接
+    local url = "https://example.com/your_script.lua"
+
+    -- 使用 loadstring 加载远程脚本
+    local success, err = pcall(function()
+        loadstring(game:HttpGet(url))()
+    end)
+
+    if success then
+        print("脚本加载成功！")
+    else
+        warn("加载脚本失败:", err)
+    end
+else
+    print("不是目标游戏，未加载脚本。")
+end
